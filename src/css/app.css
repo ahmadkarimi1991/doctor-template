@@ -33,3 +33,52 @@
 .log-in-button {
     color: var(--light-purple);
 }
+
+.main-head {
+    color: var(--dark-indigo);
+}
+
+.main-head .underline-text {
+    color: var(--light-purple);
+    border-bottom: solid var(--light-purple) .2rem;
+}
+
+.content {
+    color: var(--text-color);
+}
+
+.header-btns .first-header-btn {
+    color: #FFF7F1;
+    background-color: var(--light-purple);
+}
+
+.header-btns .second-header-btn {
+    color: var(--light-purple);
+}
+
+.header-image {
+    background-image: linear-gradient(to bottom right, #FFFBF7, #FFF7F1, #FEF1E6, #f8dbc2, #f8dbc2);
+    border-radius: 50%;
+}
+
+.header .online-doctors::before {
+    @apply w-6 h-6 absolute right-2 rounded-full;
+    content: "";
+    background-color: #2CCC32;
+    border: .5rem solid #EAFAEB;
+}
+
+.header-numbers {
+    color: var(--dark-indigo);
+    background-color: #F5E7DE;
+}
+
+.header-numbers .nums {
+    @apply my-1 w-7 h-7 flex flex-row justify-center items-center;
+    color: var(--dark-indigo);
+}
+
+.header-numbers .nums:hover {
+    @apply text-white rounded-full;
+    background-color: var(--light-purple);
+}
