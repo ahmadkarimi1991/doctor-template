@@ -12,7 +12,48 @@
 </head>
 
 <body class="min-h-full flex flex-col">
-
+    <header class="header divide-y divide-gray-300">
+        <div class="container mx-auto grid grid-cols-12 gap-4 md:gap-1 lg:gap-4 justify-center items-center">
+            <div class="col-span-6 md:hidden">
+                <div class="nav-collapse flex flex-col items-start justify-center m-1">
+                    <input type="checkbox" name="menu" id="check" class="checkbox" hidden>
+                    <div class="hamburger-menu w-10 h-10 absolute">
+                        <label for="check" class="menu cursor-pointer flex flex-col justify-around content-evenly w-full h-full">
+                            <div class="menu-line line-1 w-full h-1 rounded-lg transition origin-right"></div>
+                            <div class="menu-line line-2 w-full h-1 rounded-lg transition origin-right"></div>
+                            <div class="menu-line line-3 w-full h-1 rounded-lg transition origin-right"></div>
+                        </label>
+                    </div>
+                    <div class="navigation transition-all duration-700 ms:w-full absolute right-0 mt-12 z-20">
+                        <ul class="nav-list md:hidden font-semibold p-4">
+                            <li class="nav-item my-4"><a href="#">خانه</a></li>
+                            <li class="nav-item my-4"><a href="#">سرویس ها</a></li>
+                            <li class="nav-item my-4"><a href="#">پرسش و پاسخ</a></li>
+                            <li class="nav-item my-4"><a href="#">مشاوره</a></li>
+                            <li class="nav-item my-4"><a href="#">مقالات</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img class="col-start-13 col-span-6 md:col-span-1" src="images/logo.png" alt="لوگو">
+            <nav class="navbar hidden md:col-span-6 lg:col-span-7 md:block">
+                <ul class="nav-list flex flex-row justify-around font-semibold">
+                    <li class="nav-item"><a href="#">خانه</a></li>
+                    <li class="nav-item"><a href="#">سرویس ها</a></li>
+                    <li class="nav-item"><a href="#">پرسش و پاسخ</a></li>
+                    <li class="nav-item"><a href="#">مشاوره</a></li>
+                    <li class="nav-item"><a href="#">مقالات</a></li>
+                </ul>
+            </nav>
+            <div class="md:col-end-13 md:col-span-4 lg:col-end-13 lg:col-span-3 hidden md:flex flex-row justify-between items-center my-8">
+                <div>
+                    <div class="font-semibold text-gray-400">شماره تماس</div>
+                    <div class="phone-number font-semibold"> 555-0123 (603)</div>
+                </div>
+                <button class="log-in-button rounded-full py-1 px-5 lg:py-3 lg:px-8 border-2 bg-white border-gray-100 font-semibold" type="button">ورود</button>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>

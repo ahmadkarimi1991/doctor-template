@@ -3,3 +3,33 @@
 @import "tailwindcss/utilities";
 @import "font.css";
 @import "base.css";
+.header {
+    background-image: linear-gradient(to bottom right, #FFFF, #FFFF, #FFFBF7, #FFF7F1, #FEF1E6, #FEEEE1, #FEEBDC);
+}
+
+.checkbox:checked~.navigation {
+    @apply top-9;
+}
+
+.menu-line {
+    background-color: var(--dark-indigo);
+}
+
+.navigation {
+    top: -100%;
+    width: 50vw;
+}
+
+.navigation .nav-list {
+    color: #FFFF;
+    background-color: var(--dark-indigo);
+}
+
+.navbar .nav-item,
+.phone-number {
+    color: var(--dark-indigo);
+}
+
+.log-in-button {
+    color: var(--light-purple);
+}
