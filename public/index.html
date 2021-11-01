@@ -11,6 +11,62 @@
     <title>وب‌سایت پزشکان</title>
 </head>
 
-<body class="min-h-full flex flex-col">وب‌سایت پزشکان</body>
+<body class="min-h-full flex flex-col">
+    <header class="header divide-y divide-gray-300">
+        <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 lg:col-span-3 md:gap-1 lg:gap-4 justify-center items-center md:items-center">
+            <div class="col-span-1 block float-right my-8 md:hidden">
+                <div class="nav-collapse flex flex-col items-start justify-center m-1">
+                    <input type="checkbox" name="menu" id="check" class="checkbox" hidden>
+                    <div class="hamburger-menu w-10 h-10 absolute">
+                        <label for="check" class="menu cursor-pointer flex flex-col justify-around content-evenly w-full h-full">
+                            <div class="menu-line line-1 w-full h-1 rounded-lg transition origin-right"></div>
+                            <div class="menu-line line-2 w-full h-1 rounded-lg transition origin-right"></div>
+                            <div class="menu-line line-3 w-full h-1 rounded-lg transition origin-right"></div>
+                        </label>
+                    </div>
+                    <div class="navigation transition-all duration-700 ms:w-full absolute right-0 mt-12 z-20">
+                        <ul class="nav-list md:hidden font-semibold p-4">
+                            <li class="nav-item my-4"><a href="#">خانه</a></li>
+                            <li class="nav-item my-4"><a href="#">سرویس ها</a></li>
+                            <li class="nav-item my-4"><a href="#">پرسش و پاسخ</a></li>
+                            <li class="nav-item my-4"><a href="#">مشاوره</a></li>
+                            <li class="nav-item my-4"><a href="#">مقالات</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-start-3 col-span-1 md:col-span-1 text-lg font-extrabold doctor-name">لورم ایپسوم متن</div>
+            <nav class="navbar hidden md:col-span-3 lg:col-span-3 md:block">
+                <ul class="nav-list flex flex-row gap-6 lg:gap-16 mr-8 lg:m-0 font-semibold">
+                    <li class="nav-item"><a href="#">خانه</a></li>
+                    <li class="nav-item"><a href="#">سرویس ها</a></li>
+                    <li class="nav-item"><a href="#">پرسش و پاسخ</a></li>
+                    <li class="nav-item"><a href="#">مشاوره</a></li>
+                    <li class="nav-item"><a href="#">مقالات</a></li>
+                </ul>
+            </nav>
+            <div class="md:col-end-13 md:col-span-1 lg:col-end-13 lg:col-span-3 hidden md:flex flex-col gap-2 my-4">
+                <div class="font-semibold text-gray-400">شماره تماس</div>
+                <a class="phone-number font-semibold" href="tel:+98257002005"> 02537002005</a>
+            </div>
+        </div>
+        <div class="container mx-auto pt-8 grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center items-center relative">
+            <div class="lg:col-span-1 flex flex-row items-center justify-center lg:justify-start header-image order-1">
+                <img src="images/dr-01.png" alt="دکتر" width="700" height="700">
+            </div>
+            <div class="lg:col-span-1 flex flex-col items-center lg:items-start justify-start order-0 lg:order-2 text-center lg:text-right mx-4 lg:mx-0">
+                <h2 class="main-head text-2xl lg:text-4xl font-extrabold leading-normal mb-8">در هر زمان و هر مکان با پزشک خود مشورت کنید با یک تماس تصویری
+                </h2>
+                <div class="content text-xs lg:text-base lg:pl-20 tracking-wide leading-loose mb-8">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                </div>
+                <div class="header-btns flex flex-col items-center lg:flex-row gap-4">
+                    <button class="first-header-btn w-48 py-4 lg:py-4 rounded-full text-xs lg:text-base font-semibold lg:font-bold opacity-90 hover:opacity-100" type="button">لورم ایپسوم متن</button>
+                    <button class="second-header-btn bg-white w-48 py-4 lg:py-4 rounded-full text-xs lg:text-base font-semibold lg:font-bold opacity-90 hover:opacity-100" type="button">لورم ایپسوم</button>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
 
 </html>
