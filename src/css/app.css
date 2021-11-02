@@ -3,3 +3,7 @@
 @import "tailwindcss/utilities";
 @import "font.css";
 @import "base.css";
+#online-consultation .btn {
+    color: #F4E1D7;
+    background-color: var(--light-purple);
+}
