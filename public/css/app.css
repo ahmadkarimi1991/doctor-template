@@ -733,6 +733,12 @@ video {
   font-family: IRANSansX;
 }
 
+:root {
+  --dark-indigo: #1E144F;
+  --light-purple: #72569D;
+  --text-color: #9991A8;
+}
+
 @media (min-width: 640px) {
 }
 
