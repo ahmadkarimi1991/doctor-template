@@ -3,3 +3,12 @@
 @import "tailwindcss/utilities";
 @import "font.css";
 @import "base.css";
+.footer {
+    background-image: linear-gradient(to right bottom, #FFFF, #FFF4EB, #FEEEE2, #FFF0E5, #FEECDE);
+}
+
+.footer .doctor-name,
+.footer .phone-number,
+.footer .footer-links {
+    color: var(--dark-indigo);
+}
