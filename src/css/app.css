@@ -3,3 +3,21 @@
 @import "tailwindcss/utilities";
 @import "font.css";
 @import "base.css";
+#frequently-questions .questions input[type='checkbox']:checked~.plus-btn .first-line {
+    transform: rotateX(90deg);
+}
+
+#frequently-questions .questions input[type='checkbox']:checked~.plus-btn .second-line,
+#frequently-questions .questions input[type='checkbox']:checked~.plus-btn .first-line {
+    background-color: #FFFF;
+}
+
+#frequently-questions .questions input[type='checkbox']:checked~.plus-btn {
+    @apply bg-opacity-50;
+    background-color: var(--light-purple);
+}
+
+#frequently-questions .questions .first-line,
+#frequently-questions .questions .second-line {
+    background-color: var(--light-purple);
+}
