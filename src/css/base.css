@@ -1,3 +1,9 @@
 [lang="fa"] {
     font-family: IRANSansX;
 }
+
+:root {
+    --dark-indigo: #1E144F;
+    --light-purple: #72569D;
+    --text-color: #9991A8;
+}

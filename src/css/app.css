@@ -3,3 +3,57 @@
 @import "tailwindcss/utilities";
 @import "font.css";
 @import "base.css";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "font.css";
+@import "base.css";
+.header {
+    background-image: linear-gradient(to bottom right, #FFFF, #FFFF, #FFFBF7, #FFF7F1, #FEF1E6, #FEEEE1, #FEEBDC);
+}
+
+.checkbox:checked~.navigation {
+    @apply top-6;
+}
+
+.menu-line {
+    background-color: var(--dark-indigo);
+}
+
+.navigation {
+    top: -100%;
+    width: 100vw;
+}
+
+.navigation .nav-list {
+    color: var(--dark-indigo);
+    background-color: #FFFBF8;
+}
+
+.navbar .nav-item,
+.phone-number,
+.main-head {
+    color: var(--dark-indigo);
+}
+
+.doctor-name {
+    color: var(--light-purple);
+}
+
+.content {
+    color: var(--text-color);
+}
+
+.header-btns .first-header-btn {
+    color: #FFF7F1;
+    background-color: var(--light-purple);
+}
+
+.header-btns .second-header-btn {
+    color: var(--light-purple);
+}
+
+.header-image {
+    background-image: linear-gradient(to bottom right, #FFFBF7, #FFF7F1, #FEF1E6, #f8dbc2, #f8dbc2);
+    border-radius: 50%;
+}
